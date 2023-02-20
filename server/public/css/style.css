@@ -1,0 +1,45 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+html {
+    background: url('../neng.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #3a3838;
+}
+body {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: "Noto Serif", serif;
+}
+.jumbotron {
+    margin-top: 160px;
+    margin-bottom: 140px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logodesc {
+    font-size: 1.8vw;
+    color: white;
+}
+.logo {
+    width: 10%;
+    height: auto;
+}
+.server {
+    color: white;
+    margin: 0 auto;
+    font-size: 5vw;
+    text-align: center;
+}
+footer {
+    color: #777;
+    text-align: center;
+    margin: 380px auto 20px;
+    font-size: 0.9vw;
+}
