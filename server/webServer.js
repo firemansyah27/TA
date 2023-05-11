@@ -11,6 +11,7 @@ const argv = yargs(hideBin(process.argv)).argv;
 //Variabel index server
 const svIndex = argv.svIndex;
 const PORT = 80;
+let conns = 0
 
 console.log(svIndex);
 app.set("views", join(__dirname, "views"));
@@ -23,5 +24,7 @@ app.listen(PORT, ()=>{
 })
 
 app.get("/", (req,res)=>{
+    conns += 1
+    console.log("Request" + conns )
     res.render("index",{"svIndex":svIndex})
 })
